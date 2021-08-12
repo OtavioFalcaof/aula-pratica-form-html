@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+
+            position: relative;
+            border: 2px solid black;
+            margin: auto 0;
+            width: 480px;
+            height: 300px;
+            left: 120px;
+            top: 50px;
+            font-family:sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            position: relative;
+            left: 45px;
+            top: 35px;
+            font-size: 11px;
+            font-weight: 750;
+            color: rgb(64, 123, 233);
+        }
+
+        label {
+
+            position: relative;
+            top: 25px;
+            left: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+
+        input {
+            position: relative;
+            top: 25px;
+            left: 30px;
+            height: 32px;
+            border-radius: 3px;
+            border-color: black;
+        }
+
+        input#username {
+            width: 70%;
+        }
+
+        input#password {
+            left: 40px;
+            top: 35px;
+        }
+
+        label#senha{
+            top: 2.2rem;
+        }
+
+        input[type="submit"]{
+            width: 100px;
+            height: 38px;
+            top: 60px;
+            left: 60px;
+            font-weight: 750;
+            box-shadow: 2px 3px 4px black;
+        }
+
+        input#cadastro{
+            left: 70px;
+        }
+    </style>
+
+    <title>Tela de Login</title>
+</head>
+
+<body>
+
+    <form action="">
+        <h2>Tela de Login</h2><br>
+        <label for="Username">Usuário</label>
+        <input type="text" id="username" />
+        <br><br>
+        <label for="senha" id="senha">Senha</label>
+        <input type="password" id="password" />
+        <a href="#">Esqueceu a senha? Clique aqui</a>
+        <br><br>
+        <input type="submit" name="acesso" id="acesso" value="Fazer Login">
+        <input type="submit" name="cadastro" id="cadastro" value="Cadastrar">
+
+    </form>
+
+
+</body>
+
+</html>

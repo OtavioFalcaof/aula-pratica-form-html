@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .formulario {
+            position: relative;
+            top: 25px;
+            width: 70%;
+            height: 580px;
+            left: 140px;
+            border: 2px solid black;
+        }
+
+        h4 {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            width: 720px;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 3px;
+        }
+
+        .tabela table {
+            box-shadow: 1px 3px 1px rgb(136, 133, 133);
+            top: 35px;
+            left: 160px;
+        }
+
+        .colegiado {
+            position: relative;
+            width: auto;
+            border: 1px solid rgb(223, 222, 222);
+            top: 15px;
+        }
+
+        label#nome {
+            position: relative;
+            left: 45px;
+            top: 5px;
+            font-weight: bold;
+        }
+
+        input#nome {
+            width: 65%;
+            position: relative;
+            left: 80px;
+            top: 5px;
+            height: 30px;
+        }
+
+
+        /*SIGLA*/
+        label#sigla {
+            position: relative;
+            top: 25px;
+            left: 45px;
+            font-weight: bold;
+        }
+
+        input#sigla {
+            position: relative;
+            top: 25px;
+            left: 103px;
+            height: 30px;
+            width: 80px;
+        }
+
+
+        /*DATA DE ATIVAÇÃO*/
+        label#date {
+            position: relative;
+            top: 5px;
+            left: 20px;
+            font-weight: bold;
+
+        }
+
+        input#data {
+            position: relative;
+            height: 30px;
+            left: 40px;
+            top: 5px;
+            margin-top: 15px;
+        }
+
+
+        /*ÓRGÃO DE ORIGEM*/
+        label#origin {
+            position: relative;
+            left: 10px;
+            top: 5px;
+            font-weight: bold;
+        }
+
+        input#origem {
+            position: relative;
+            left: 15px;
+            top: 5px;
+            height: 28px;
+            width: 55%;
+
+        }
+
+        input#buscar {
+            position: relative;
+            left: 20px;
+            top: 5px;
+            width: 80px;
+            height: 30px;
+            background-color: rgb(128, 128, 128);
+            color: white;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        /*ÓRGÃO SUPERIOR*/
+        label#sup {
+            position: relative;
+            left: 10px;
+            top: 25px;
+            font-weight: bold;
+        }
+
+        input#superior {
+            position: relative;
+            left: 25px;
+            top: 25px;
+            height: 28px;
+            width: 55%;
+
+        }
+
+        input#busca {
+            position: relative;
+            left: 32px;
+            top: 25px;
+            width: 80px;
+            height: 30px;
+            background-color: rgb(128, 128, 128);
+            color: white;
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        /* PARTE DA DOCUMENTAÇÃO*/
+        label#document {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            font-weight: bold;
+        }
+
+        #doc {
+            position: relative;
+            width: 650px;
+            height: 80px;
+            left: 30px;
+            top: 50px;
+        }
+
+        .status {
+            position: relative;
+            top: -8px;
+            left: 600px;
+        }
+
+        label#select {
+            position: relative;
+            font-weight: bold;
+        }
+
+        select#select {
+            height: 25px;
+        }
+
+        .desativado {
+            position: relative;
+            top: -30px;
+            left: 590px;
+        }
+
+        label#desativar {
+            font-weight: bold;
+        }
+
+        input#datadDesativar {
+            width: 120px;
+            height: 25px;
+        }
+
+        .button{
+            position: relative;
+            top: 80px;
+            left: 135px;
+        }
+        input#access{
+            height: 30px;
+            width: 80px;
+            box-shadow: 1px 2px 1px black;
+        }
+
+        input#delet{
+            position: relative;
+            height: 30px;
+            width: 80px;
+            left: 460px;
+            box-shadow: 1px 2px 1px black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+        <h4>Manutenção de órgão colegiado</h4>
+        <div class="tabela">
+            <table>
+                <tr>
+                    <td>
+                        <b>Unidade</b>
+                    </td>
+                    <td>
+                        FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            Tipo Colegiado
+                        </b>
+                    </td>
+                    <td>
+                        CONGREGAÇÃO
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h4 style="background-color: rgb(233, 233, 233); position: relative; top: 20px;">Órgão Colegiado</h4>
+        <br>
+        <section class="colegiado">
+            <form action="" method="">
+                <label for="nome" id="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="CONGREGAÇÃO DA FACULDADE DE ILHA SOLTEIRA" /><br>
+
+                <label for="sigla" id="sigla">Sigla</label>
+                <input type="text" id="sigla" placeholder="CFIS" /><br>
+
+                <div class="status">
+                    <label for="" id="select">Status</label>
+                    <select name="" id="select">
+                        <option value="ativado">ATIVADO</option>
+                        <option value="desativado">DESATIVADO</option>
+                    </select>
+                </div>
+
+                <label for="data" id="date">Data Ativação</label>
+                <input type="date" name="data" id="data" placeholder="15/07/2020"><br>
+                <div class="desativado">
+                    <label for="" id="desativar">Data Desativação</label>
+                    <input type="text" name="desativacao" id="datadDesativar">
+                </div>
+                <label for="" id="origin">Órgão de Origem</label>
+                <input type="text" id="origem">
+                <input type="submit" id="buscar" value="Buscar">
+                <br>
+
+                <label for="" id="sup">Órgão Superior</label>
+                <input type="text" name="sup" id="superior" />
+                <input type="submit" value="Buscar" id="busca">
+                <br>
+
+
+                <label for="" id="document">Documentação</label>
+                <textarea name="Doc" id="doc" cols="40" rows="6"
+                    placeholder="Órgão criado com o objetivo de aprovar normas da unidade."></textarea>
+            </form>
+        </section>
+        <div class="button">
+        <input type="submit" id="access" value="Enviar">
+        <input type="reset" id="delet" value="Excluir">
+         </div>   
+    </div>
+</body>
+
+</html>

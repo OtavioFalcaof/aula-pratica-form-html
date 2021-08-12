@@ -1,0 +1,11 @@
+{
+  "name": "atividade-1",
+  "version": "1.0.0",
+  "description": "Tela de Login",
+  "main": "index.html",
+  "scripts": {
+    
+  },
+  "author": "Otavio Augusto",
+  "license": "ISC"
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+    
+        h2{
+            position: relative;
+            top: 9px;
+            left: 12px;
+        }
+
+        form{
+            border: 1px solid black;
+            width: 40%;
+            height: 270px;
+            position: relative;
+            left: 420px;
+            top: 150px;
+        }
+
+        label{
+            position: relative;
+            top: 10px;
+            left: 14px;
+        }
+
+        input,select{
+            position: relative;
+            top: 10px;
+            left: 15px;
+        }
+
+        input#nome{
+            width: 40%;
+            height: 30px;
+        }
+        input#idade{
+            height: 30px;
+        }
+
+    </style>
+   
+    <title>Dados pessoais</title>
+
+</head>
+
+<body>
+    <form action="" method="">
+        <h2>Dados pessoais</h2><br>
+        <label for="Nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <br><br>
+        <label for="Idade">Idade:</label>
+        <input type="number" name="idade" id="idade">
+        <br><br>
+        <h2>Dados profissionais</h2>
+        <br>
+        <label for="escolaridade">Escolaridade:</label>
+        <select name="escolaridade" id="escolaridade">
+            <option value="eMedio">Ensino Médio</option>
+            <option value="graduacao">Graduação</option>
+            <option value="pGraduacao">Pós-graduação</option>
+            <option value="others">Outros</option>
+        </select>
+        <br><br>
+        <label for="Area">Área de atuação </label>
+        <input type="radio" id="gerencia" value="gerencia"/>
+        <label for="gerencia">Gerência</label>
+        <input type="radio" id="financeiro" value="financeiro"/>
+        <label for="financeiro">Financeiro</label>
+        <input type="radio" id="recepcao"/>
+        <label for="recepcao">Recepção</label>
+
+    </form>
+
+
+
+</body>
+
+</html>

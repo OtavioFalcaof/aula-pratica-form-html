@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-left: 15px;
+        }
+
+        .principal {
+            border: 2px solid black;
+            width: 630px;
+            height: 615px;
+            position: relative;
+            margin-left: 100px;
+            top: 15px;
+        }
+
+        fieldset {
+            width: 600px;
+            height: 180px;
+            position: relative;
+            left: 12px;
+            top: -1px;
+        }
+
+        legend {
+            margin-left: 15px;
+            font-weight: 700;
+        }
+
+        .formularioDados {
+            position: relative;
+            top: 11px;
+        }
+
+        label {
+            margin-left: 10px;
+            font-weight: 700;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .container fieldset {
+            height: 320px;
+            top: 5px;
+        }
+
+        .container input[type="radio"] {
+
+
+            top: 2px;
+            left: 4px;
+        }
+
+        .container label {
+
+            top: 1px
+        }
+
+        .container p {
+            position: relative;
+            left: 15px;
+            top: 100px;
+        }
+
+        .container textarea {
+            position: relative;
+            left: 150px;
+        }
+
+        input[type="submit"]{
+            
+            position: relative;
+            width: 70px;
+            height: 25px;
+            top: 25px;
+            left: 12px;
+            border-color: rgb(143, 143, 143);
+            box-shadow: 1px 1px black;
+        }
+
+        input[type="reset"]{
+            position: relative;
+            width: 70px;
+            height: 25px;
+            top: 25px;
+            left: 12px;
+            border-color: rgb(143, 143, 143);
+            box-shadow: 1px 1px black;
+        }
+    </style>
+
+
+    <title>Atividade Forms</title>
+</head>
+
+<body>
+    <div class="principal">
+        <h1>Formulário</h1>
+        <br>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <form action="" method="" class="formularioDados">
+                <label for="Nome">Nome:</label>
+                <input type="text" name="nome" />
+                <br><br>
+                <label for="Endereco">Endereço:</label>
+                <input type="text" name="endereco" />
+                <br><br>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" />
+                <br><br>
+                <label for="estado">Estado:</label>
+                <select name="estados" id="estados">
+                    <option value="">São Paulo</option>
+                    <option value="">Rio de Janeiro</option>
+                    <option value="">Pernambuco</option>
+                    <option value="">Bahia</option>
+                    <option value="">Manaus</option>
+                    <option value="">Acre</option>
+                </select>
+            </form>
+        </fieldset>
+        <div class="container">
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <br>
+                <form action="" method="">
+                    <h4>Natureza do Cargo</h4><br>
+                    <input type="radio" id="gerencia" name="gerencia" value="gerencia" />
+                    <label for="Gerencia">Gerência</label>
+                    <input type="radio" id="financeiro" name="financeiro" value="financeiro" />
+                    <label for="financeiro">Financeiro</label>
+                    <input type="radio" id="recepcao" name="recepcao" value="recepcao" />
+                    <label for="recepcao">Recepção</label>
+                    <input type="radio" id="administrativo" name="administrativo" value="administrativo" />
+                    <label for="administrativo">Administrativo</label>
+                    <input type="radio" id="juri" name="juri" value="juri" />
+                    <label for="juri">Jurídico</label>
+                    <br><br>
+                    <h4>Área de interesse</p><br>
+                        <input type="checkbox" name="comp" id="computacao" value="computacao">
+                        <label for="Computacao">Computação</label>
+                        <input type="checkbox" name="bio" id="bio" value="biologia">
+                        <label for="bio">Biologia</label>
+                        <input type="checkbox" name="ambiente" id="ambiente" value="MeioAmbiente">
+                        <label for="ambiente">Meio Ambiente</label>
+                        <input type="checkbox" name="eng" id="eng" value="eng">
+                        <label for="engenharia">Engenharia</label>
+                        <input type="checkbox" name="hist" id="hist" value="historia">
+                        <label for="historia">História</label>
+                        <br><br>
+                        <p>Mini-currículo:</p>
+                        <textarea name="cv" id="cv" cols="60" rows="7"></textarea>
+                </form>
+            </fieldset>
+        </div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</body>
+
+</html>
